@@ -8,15 +8,5 @@ def main_kb():
     #     InlineKeyboardButton('Создать отчет', callback_data='create_report')
     # )
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-    keyboard.add(
-        KeyboardButton('Создать отчет')
-    )
-    return keyboard
-
-
-def cancel_kb():
-    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-    keyboard.add(
-        KeyboardButton('Отмена')
-    )
+    keyboard.add(KeyboardButton("Создать отчет"))
     return keyboard

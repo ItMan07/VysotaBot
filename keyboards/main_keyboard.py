@@ -12,3 +12,11 @@ def main_kb():
         KeyboardButton('Создать отчет')
     )
     return keyboard
+
+
+def cancel_kb():
+    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
+    keyboard.add(
+        KeyboardButton('Отмена')
+    )
+    return keyboard
